@@ -5,10 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio | ULTIMATE Portfolio</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+
+      /* universal selector */
+      * {
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;  
+      }
+      /* Type Selecor */
+      /* header{}
+      img{}
+      p{} */
+
+      /* Class selector */
+      /* use make use of . follow by the class name to make of class selector */
+      .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /* id selector */
+      /* use make us eof # follow by the ide name */
+      #nav-list {
+        display: flex;
+        gap: 10px;
+      }
+
+      /* attribute selector */
+      a[href="./index.html"]{
+        color: blue;
+        text-decoration: none;
+        font-size: larger;
+      }
+      h1, p {
+        font-family: 'Courier New', Courier, monospace;
+        color: red;
+      }
+    </style> -->
   </head>
   <body>
     <!-- header start -->
-    <header>
+    <header class="head">
       <div>
         <img
           src="./images/favicon.png"
@@ -20,9 +60,9 @@
       </div>
 
       <nav>
-        <ul>
+        <ul id="nav-list">
           <li>
-            <a href="./index.html">Home</a>
+            <a href="./index.html" class="link nav-link ">Home</a>
           </li>
           <li>
             <a href="./projects.html">Projects</a>
@@ -51,7 +91,7 @@
         <!-- hero text content -->
         <div>
           <!-- implement javascript for greeting -->
-          <h1>Good Morning, I'm <span>ULTIMATE</span></h1>
+          <h1>Good Morning, I'm <span class="name">ULTIMATE</span></h1>
           <p>Animation Contents</p>
           <p>
             A <strong> Front-End Developer </strong> who builds fast, beautiful,
