@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --primary-color: #ff4b2b;
+  --secondary-color: #046e03;
+  --accent-color: #ff4b2b;
+
+
+  --rounded-sm: 0.2rem;
+  --rounded-md: 0.4rem;
+  --rounded-lg: 0.8rem;
+
+
+  --font-family: 'Poppins', sans-serif;
+  --font-size-sm: 1.2rem;
+  --font-size-md: 1.6rem;
+  --font-size-lg: 2.4rem;
+}
+
+body {
+  background-color: #046e03;
+}
