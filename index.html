@@ -5,77 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio | ULTIMATE Portfolio</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- <style>
-
-      /* universal selector */
-      * {
-        padding: 0;
-        box-sizing: border-box;
-        margin: 0;  
-      }
-      /* Type Selecor */
-      /* header{}
-      img{}
-      p{} */
-
-      /* Class selector */
-      /* use make use of . follow by the class name to make of class selector */
-      .head{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      /* id selector */
-      /* use make us eof # follow by the ide name */
-      #nav-list {
-        display: flex;
-        gap: 10px;
-      }
-
-      /* attribute selector */
-      a[href="./index.html"]{
-        color: blue;
-        text-decoration: none;
-        font-size: larger;
-      }
-      h1, p {
-        font-family: 'Courier New', Courier, monospace;
-        color: red;
-      }
-    </style> -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
   </head>
   <body>
     <!-- header start -->
-    <header class="head">
-      <a href="./index.html">
-        <img
-          src="./images/favicon.png"
-          alt="this is my business logo"
-          width="100"
-          height="auto"
-          title="This is my portfolio logo"
-        />
-      </a>
+    <header class="center-content">
+      <div class="max-width class header-content">
+        <a href="./index.html" >
+          <img
+            src="./images/logo.png"
+            alt="this is my business logo"
+            class="logo"
+            title="This is my portfolio logo"
+          />
+          <h1>Ulti Folio</h1>
+        </a>
 
-      <nav>
-        <ul id="nav-list">
-          <li>
-            <a href="./index.html" class="link nav-link">Home</a>
-          </li>
-          <li>
-            <a href="./projects.html">Projects</a>
-          </li>
-          <li>
-            <a href="./blog.html">Blog</a>
-          </li>
-          <li>
-            <a href="./contact.html">Contact</a>
-          </li>
-          
-        </ul>
-      </nav>
+        <!-- navigation links -->
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- header ends -->
 
@@ -84,7 +48,7 @@
       <!-- the hero section  -->
       <section>
         <!-- hero text content -->
-        <div class>
+        <div>
           <!-- implement javascript for greeting -->
           <h1>Good Morning, I'm <span class="name">ULTIMATE</span></h1>
           <p>Animation Contents</p>

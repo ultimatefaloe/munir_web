@@ -21,4 +21,10 @@
   --rounded-full: 9999px;
 
   --transition: all 0.3s ease;
+
+  --font-family: "Archivo", system-ui;
+  --font-family-alt: "Roboto", sans-serif;
+
+  /* shadow */
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
