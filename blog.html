@@ -10,39 +10,88 @@
   </head>
   <body>
     <!-- header start -->
-    <header>
-      <div>
-        <img
-          src="./images/favicon.png"
-          alt="this is my business logo"
-          width="100"
-          height="auto"
-          title="This is my portfolio logo"
-        />
-      </div>
+   <header class="center-content">
+      <div class="max-width class header-content">
+        <a href="./index.html">
+          <img
+            src="./images/logo.png"
+            alt="this is my business logo"
+            class="logo"
+            title="This is my portfolio logo"
+          />
+          <h1>Ulti Folio</h1>
+        </a>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="./projects.html">Projects</a>
-          </li>
-          <li>
-            <a href="./blog.html">Blog</a>
-          </li>
-          <li>
-            <a href="./contact.html">Contact</a>
-          </li>
-          <!-- <li>
-            <a href="#about_me">Jump to About me</a>
-          </li>
-          <li>
-            <a href="#my_skills">Jump to My Skills</a>
-          </li> -->
-        </ul>
-      </nav>
+        <div class="open-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="3em"
+            height="3em"
+            viewBox="0 0 24 24"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="none"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 17h8m-8-5h14M5 7h8"
+            />
+          </svg>
+        </div>
+
+        <!-- desktop navigation -->
+        <!-- navigation links -->
+        <nav class="desktop-nav" >
+          <ul class="nav-links">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- mobile sidebar -->
+        <nav class="sidebar">
+          <div class="close-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="3em"
+              height="3em"
+              viewBox="0 0 1024 1024"
+            >
+              <path d="M0 0h1024v1024H0z" fill="none" />
+              <path
+                fill="#fff"
+                d="M195.2 195.2a64 64 0 0 1 90.5 0L512 421.5l226.3-226.3a64 64 0 0 1 90.5 90.5L602.5 512l226.3 226.3a64 64 0 0 1-90.5 90.5L512 602.5L285.7 828.8a64 64 0 0 1-90.5-90.5L421.5 512L195.2 285.7a64 64 0 0 1 0-90.5"
+              />
+            </svg>
+          </div>
+          <ul class="">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- header ends -->
 
