@@ -1,0 +1,140 @@
+/* .hero-section{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  place-items: center;
+  align-items: center;
+}
+
+.text{
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+.img-1{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.img-2{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.img-3{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.img-4{
+  grid-column: 4/5;
+  grid-row: 1/2;
+} */
+
+
+/* hero section styles */
+.hero-section{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  padding: 5rem 2rem;
+}
+.hero-left{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero-left h1{
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.highlight-name{
+  background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.hero-left p{
+  font-size: 2rem;
+  color: var(--color-muted);
+}
+.hero-left p strong{
+  color: var(--color-primary);
+}
+.cta{
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.hero-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.hero-right img{
+  width: 100%;
+  max-width: 400px;
+  border-radius: var(--rounded-md);
+  box-shadow: var(--shadow);
+}
+
+/* hero section media queries */
+@media screen and (max-width: 768px) {
+  .hero-section{
+    grid-template-columns: 1fr;
+    padding: 5rem 2rem;
+  }
+  .hero-left h1{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .hero-left p{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .cta{
+    justify-content: center;
+  }
+  .hero-right{
+    margin-top: 5rem;
+  }
+  /* .hero-right{
+    display: none;
+  } */
+  .hero-right img{
+    max-width: 300px;
+  }
+}
+/* hero section styles end */
+
+/* about me section styles */
+
+/* about and skill grouping */
+.about-section, .skill-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 2rem;
+}
+.about-section h2, .skill-section h2{
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.about-section p, .skill-section p{
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+
+.emphasis{
+  border-left: 4px double var(--color-primary);
+  padding: 1rem 4rem;
+  background-color: var(--color-card);
+  border-top-right-radius: var(--rounded-sm);
+  border-bottom-right-radius: var(--rounded-sm);
+}
+.emphasis p{
+  font-size: 1.5rem;
+  color: var(--color-muted);
+  font-style: italic;
+}

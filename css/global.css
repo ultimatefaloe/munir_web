@@ -95,6 +95,26 @@ h6 {
   margin: 0 auto;
 }
 
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+/* title style */
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.title::after{
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 0.4rem;
+  border-radius: var(--rounded-full);
+  background-color: var(--color-primary);
+  margin-top: 0.5rem;
+}
+
 /* Global Styles */
 /* Header styles */
 header {
@@ -193,7 +213,7 @@ header {
     box-shadow: var(--shadow);
     transition: var(--transition);
     z-index: 9999;
-    padding: 1rem
+    padding: 1rem;
   }
   .sidebar ul {
     list-style: none;
@@ -211,7 +231,7 @@ header {
     border-radius: var(--rounded-sm);
   }
   .sidebar .close-menu {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
