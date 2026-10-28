@@ -98,6 +98,9 @@ h6 {
 .bg-dark {
   background-color: var(--color-dark);
 }
+.bg-light {
+  background-color: var(--color-card);
+}
 
 /* title style */
 .title {
@@ -309,3 +312,36 @@ header {
   left: 0;
   z-index: 1;
 } */
+
+
+/* footer style */
+footer {
+  background-color: var(--color-footer-bg);
+  color: var(--color-muted);
+}
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.footer-content p{
+  font-size: 1.4rem;
+  color: var(--color-muted);
+}
+
+.footer-content ul li{
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.footer-content ul li a{
+  color: var(--color-muted);
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.footer-content ul li a:hover{
+  color: var(--color-primary);
+}
