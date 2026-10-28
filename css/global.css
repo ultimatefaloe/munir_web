@@ -82,6 +82,13 @@ h6 {
 .btn-rounded-full {
   border-radius: var(--rounded-full);
 }
+.btn-full{
+  width: 100%;
+}
+
+.space-top{
+  margin-top: 4rem;
+}
 
 /* size styles */
 .center-content {
